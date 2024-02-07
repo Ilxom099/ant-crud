@@ -18,12 +18,13 @@ const App = () => {
     } = theme.useToken();
     return (
         <Layout style={{height: "100vh"}}>
-            <Sider trigger={null} collapsible collapsed={collapsed}>
+            <Sider trigger={null} style={{background:"crimson"}} collapsible collapsed={collapsed}>
                 <div className="demo-logo-vertical text-center text-white">
                     <h2> Logo </h2>
                 </div>
                 <Menu
                     theme="dark"
+                    style={{background:"crimson"}}
                     mode="inline"
                     defaultSelectedKeys={['1']}
                     onClick={(e)=> navigate(e.key)  }
@@ -69,7 +70,7 @@ const App = () => {
                         margin: '24px 16px',
                         padding: 24,
                         minHeight: 280,
-                        background: colorBgContainer,
+                        background: "lightgreen",
                         borderRadius: borderRadiusLG,
                     }}
                 >
